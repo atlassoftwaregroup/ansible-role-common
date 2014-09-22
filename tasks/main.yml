@@ -5,3 +5,6 @@
 - name: install packages
   apt: name={{ item }} state=present
   with_items: pkgs
+- name: Install nodejs packages
+  npm: name={{ item }} global=yes state=present
+  with_items: npm_pkgs
