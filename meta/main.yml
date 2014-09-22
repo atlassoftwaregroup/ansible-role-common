@@ -8,7 +8,7 @@ galaxy_info:
     - name: Ubuntu
       versions:
         - precise
-	categories:
-		- development
-		- web
+  categories:
+    - development
+    - web
 dependencies: []
