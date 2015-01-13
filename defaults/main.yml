@@ -6,3 +6,6 @@ pkgs:
   - htop
   - tree
   - acl
+
+ppas:
+  - ppa:ondrej/php5-oldstable

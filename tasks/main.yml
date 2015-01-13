@@ -2,6 +2,13 @@
 # tasks file for common
 - name: Update apt cache if needed
   apt: update_cache=yes cache_valid_time=3600
+- name: add ppas
+  apt_repository:
+    repo: "{{ item }}"
+    state: present
+  with_items: ppas
 - name: install packages
-  apt: name={{ item }} state=present
+  apt:
+    name: "{{ item }}"
+    state: present
   with_items: pkgs
