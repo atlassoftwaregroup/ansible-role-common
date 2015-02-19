@@ -16,4 +16,4 @@
   pip:
     name: "{{ item }}"
     state: present
-  with_itmes: pip_pkgs
+  with_items: pip_pkgs

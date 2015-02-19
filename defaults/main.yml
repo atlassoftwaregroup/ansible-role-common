@@ -6,6 +6,7 @@ pkgs:
   - htop
   - tree
   - acl
+  - python-pip
 
 ppas:
   - ppa:ondrej/php5-oldstable
