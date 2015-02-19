@@ -9,3 +9,6 @@ pkgs:
 
 ppas:
   - ppa:ondrej/php5-oldstable
+
+pip_pkgs:
+  - virtualenv
