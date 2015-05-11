@@ -12,3 +12,9 @@
     repo: "{{ item }}"
     state: present
   with_items: ppas
+
+- name: install pip packages
+  pip:
+    name: "{{ item }}"
+    state: present
+  with_items: pip_pkgs

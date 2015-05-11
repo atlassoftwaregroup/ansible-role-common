@@ -7,10 +7,3 @@
   when: ansible_os_family == 'RedHat'
 - include: debian.yml
   when: ansible_os_family == 'Debian'
-
-# tasks file for common
-- name: install pip packages
-  pip:
-    name: "{{ item }}"
-    state: present
-  with_items: pip_pkgs
