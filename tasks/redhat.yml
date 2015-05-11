@@ -1,4 +1,4 @@
-- name: Ensure Apache is installed.
+- name: Install list of packages
   yum:
     name: "{{ item }}"
     state: installed
