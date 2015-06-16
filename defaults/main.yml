@@ -8,8 +8,10 @@ pkgs:
   - acl
   - python-pip
 
-ppas:
-  - ppa:ondrej/php5-oldstable
+# define if applicable
+# ppas:
+#   - ppa:ondrej/php5-oldstable
 
-pip_pkgs:
-  - virtualenv
+# define if applicable
+# pip_pkgs:
+#   - virtualenv
