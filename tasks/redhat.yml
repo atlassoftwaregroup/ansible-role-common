@@ -4,3 +4,9 @@
     state: installed
     update_cache: yes
   with_items: pkgs
+- name: install pip packages
+  pip:
+    name: "{{ item }}"
+    state: present
+  with_items: pip_pkgs
+  when: pip_pkgs is defined
